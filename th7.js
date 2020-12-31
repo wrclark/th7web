@@ -10,7 +10,7 @@ function updateList() {
 
 	};
 
-	xhttp.open("GET", "test_data.json", true);
+	xhttp.open("GET", "thermocouples.json", true);
 	xhttp.send();
 }
 
