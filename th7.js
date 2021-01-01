@@ -20,7 +20,7 @@ function updateListItem(data) {
 	var x = JSON.parse(data);
 	for(i in x) {
 		//document.getElementById("li".concat(parseInt(i)+1)).innerHTML = x[i].value;
-		var cells = document.getElementById("channel1").getElementsByTagName('td');
+		var cells = document.getElementById("channel".concat(i+1)).getElementsByTagName('td');
 		cells[0].innerHTML = parseInt(x[i].id) + 1;
 		cells[1].innerHTML = x[i].tempc;
 		cells[2].innerHTML = x[i].type;
