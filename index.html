@@ -4,29 +4,110 @@
 	<title>WEB INTERFACE TH7</title>
 	<script src="th7.js"></script>
 	<script>var a = setInterval(updateList, 1000); </script>
+	<style>
+		table, th, td {
+  			border: 1px solid black;
+		}
+	</style>
 </head>
 
 <body>
 	<h1>TH7 data</h1>
 	<section id="temp-list">
-		<ol>
-			<li id="li1">REF 1</li>
-			<li id="li2">REF 2</li>
-			<li id="li3">REF 3</li>
-			<li id="li4">REF 4</li>
-			<li id="li5">REF 5</li>
-			<li id="li6">REF 6</li>
-			<li id="li7">REF 7</li>
-		</ol>
+		<table>
+			<tr>
+				<th>Channel</th>
+				<th>Temperature</th>
+				<th>T/C type</th>
+				<th>Offset</th>
+				<th>Gain</th>
+				<th>&micro;V</th>
+			</tr>
+			<tr id="channel1">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+			<tr id="channel2">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+			<tr id="channel3">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+			<tr id="channel4">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+			<tr id="channel5">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+			<tr id="channel6">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+			<tr id="channel7">
+				<td>channel</td>
+				<td>temp</td>
+				<td>tc type</td>
+				<td>offset</td>
+				<td>gain</td>
+				<td>microv</td>
+			</tr>
+		</table>
 	</section>
+
 	<section id="pcb-info">
-		<ol>
-			<li id="a1">REF</li>
-			<li id="a2">REF</li>
-			<li id="a3">REF</li>
-			<li id="a4">REF</li>
-		</ol>
+		<table>
+			<tr>
+				<th>PCB property</th>
+				<th>value</th>
+			</tr>
+			<tr>
+				<td>PCB temperature</td>
+				<td id="pcb_temp">value</td>
+			</tr>
+			<tr>
+				<td>PCB Vdd (supply)</td>
+				<td id="pivdd">value</td>
+			</tr>
+			<tr>
+				<td>PCB Vadj</td>
+				<td id="pivadj">value</td>
+			</tr>
+			<tr>
+				<td>PCB Vref</td>
+				<td id="pivref">value</td>
+			</tr>
+		</table>
+
 	</section>
+
 	<button type="button" onclick="updateList()">UPDATE</button>
 	<p id="update-response">Response...</p>
 </body>
